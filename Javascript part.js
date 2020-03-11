@@ -1,1 +1,1 @@
-<!DOCTYPE js>
+function L{if }
