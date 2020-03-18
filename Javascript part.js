@@ -218,6 +218,12 @@ function functionEnter(){
             window.score1 = score - 20;
             window.score = score1;
         }
+        else if (str1 === "NUT"){
+            var correct = "How to Busta";
+            document.getElementById("answer").innerHTML = correct;
+            window.score1 = score;
+            window.score = score1;
+        }
         window.score1 = score + 25;
         window.score = score1;
         window.shownScore = score + " / " + minScore
@@ -255,14 +261,14 @@ function functionEnter(){
 
 function functionNext(){
     if (level === 2){
-        window.threeLetter = ["GNU", "GUN", "GUT", "LEU", "LUG", "LUR", "NUT", "RUE", "RUG", "RUN", "RUT", "TAU", "TUG", "TUN", "URN"]
+        window.threeLetter = ["GNU", "GUN", "GUT", "LEU", "LUG", "LUR", "RUE", "RUG", "RUN", "RUT", "TAU", "TUG", "TUN", "URN"]
         window.fourLetter = ["AGUE", "ARUI", "AUNT", "ETUI", "GAUL", "GAUR", "GENU", "GLUE", "GLUT", "GUAN", "GUAR", "GULA", "GULE", "GURN", "IGLU", "LIEU", "LUGE", "LUNA", "LUNE", "LUNG", "LURE", "LUTE", "RUGA", "RUIN", "RULE", "RUNE", "RUNG", "RUNT", "TRUE", "TRUG", "TULE", "TUNA", "TUNE", "TUNG", "TURN", "UGLI", "ULNA", "UNAI", "UNIT", "UREA", "URGE"]
         window.fiveLetter = ["ARGUE", "AUGER", "GAULT", "GAUNT", "GLUTE", "GRUEL", "GRUNT", "GUILE", "GUILT", "GULAR", "INULA", "INURE", "LUGER", "LUNAR", "LUNGE", "LUNGI", "RUTIN", "TUNER", "TURIN", "ULNAR", "ULTRA", "UNITE", "UNLIT", "UNRIG", "UNTIE", "UNTIL", "URATE", "URIAL", "URINE", "UTERI", "UTILE"]
         window.sixLetter = ["AIRGUN", "AUGITE", "AUNTIE", "ENGLUT", "GLUTEN", "GUINEA", "GUITAR", "GUNITE", "LAGUNE", "LANGUR", "LINGUA", "LUNATE", "LUNGER", "LURING", "LUTEIN", "LUTING", "NATURE", "NEURAL", "NUTRIA", "RITUAL", "RULING", "RUNLET", "RUTILE", "TRIUNE", "TUAREG", "TUGELA", "UGLIER", "UNREAL", "UNTIER", "URGENT", "URINAL"]
         window.sevenLetter = ["ALUNITE", "GUANTER", "GRANULE", "GRUNTLE", "LANGUET", "NEUTRAL", "RUINATE", "TAURINE", "TEGULAR", "UNALERT", "URINATE"]
         window.eightLetter = ["LIGATURE", "TENURIAL"]
         window.nineLetter = ["GRANULITE"]
-        window.easterEggs = ["GUNIT"]
+        window.easterEggs = ["GUNIT", "NUT"]
         minScore = 75
         window.zero = "U"
         window.one = "N"
@@ -302,7 +308,7 @@ function functionNext(){
         window.fourLetter = ["ACYL", "ALIT", "ALLY", "ALTO", "ANIL", "CALL", "CALO", "CILL", "CLAN", "CLAY", "CLIT", "CLON", "CLOT", "CLOY", "COAL", "COIL", "COLA", "COLT", "COLY", "ILLY", "INLY", "LACY", "LAIC", "LAIN", "LATI", "LILO", "LILT", "LILY", "LINO", "LINT", "LINY", "LION", "LOAN", "LOCA", "LOCI", "LOIN", "LOTA", "LOTI", "LYON", "NAIL", "NILL", "NOIL", "OILY", "OLLA", "ONLY", "TAIL", "TALC", "TALI", "TALL", "TILL", "TOIL", "TOLA", "TOLL", "YILL"]
         window.fiveLetter = ["ALLOT", "ALLOY", "ALOIN", "ATOLL", "CLINT", "COALY", "COLIN", "COLLY", "INLAY", "ITALY", "LAITY", "LATIN", "LAYIN", "LILAC", "LINAC", "LINTY", "LLANO", "LOCAL", "LOTIC", "LOYAL", "LYTIC", "NICOL", "NOILY", "NOTAL", "OCTAL", "OCTYL", "ONLAY", "TALLY", "TALON", "TICAL", "TOLAN", "TOLYL", "TONAL"]
         window.sixLetter = ["ALIYOT", "ALNICO", "CATLIN", "CITOLA", "CLINAL", "CLONAL", "COITAL", "LACILY", "LATINO", "LINTOL", "LITANY", "OILCAN", "TALION", "TINCAL"]
-        window.sevenLetter = ["ACYLION", "ANTICLY", "TONALLY"]
+        window.sevenLetter = ["ACYLION", "ANTICLY", "TONALLY", "CLAYTON"]
         window.eightLetter = ["COITALLY", "LOCALITY"]
         window.nineLetter = ["ONTICALLY", "TONICALLY"]
         window.easterEggs = ["LOL", "LOLCAT", "CONYLL"]
